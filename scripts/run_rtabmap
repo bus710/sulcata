@@ -1,0 +1,2 @@
+roslaunch rtabmap_ros rgbd_mapping_kinect2.launch
+
