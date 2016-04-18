@@ -20,7 +20,8 @@ This project can be useful for developers who have Kinect v2 instead of Kinect v
 - [Hardware setting](#hardware-setting)
 - [Software setting](#software-setting)
 - [Launch](#launch)
-- [Todo](#todo)
+- [Todo list](#todo-list)
+- [Reference](#todo)
 
 ## Hardware setting
 Altough you need a slodering and drilling process to build this, I would like to say this is relatively easy. :)  
@@ -60,14 +61,33 @@ sudo apt-get install python-rosinstall
 cd ~
 mkdir catkin_ws
 cd catkin_ws
-catkin_make
+catkin_make  
+
 echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo "alias cw='cd ~/catkin_ws'"
+echo "alias cs='cd ~/catkin_ws/src'"
+echo "alias cm='cw && catkin_make'"
 source ~/.bashrc
+```
+
+- Install Kobuki packages ([see also]())
+```
+sudo apt-get install ros-indigo-kobuki*
+```
+
+- Install urg_node package ([see also]())
+```
+sudo apt-get install ros-indigo-urg-node 
+```
+
+- Install depthimage-to-laserscan package ([see also]())
+```
+sudo apt-get install ros-indigo-depthimage-to-laserscan
 ```
 
 - Install libfreenect2 package ([see also]())
 ```
-aa
+
 ```
 
 - Install iai_kinect2 package ([see also]())
@@ -75,28 +95,18 @@ aa
 aa
 ```
 
-- Install Kobuki packages ([see also]())
-```
-aa
-```
-
-- Install urg_node package ([see also]())
-```
-aa
-```
-
-- Install depthimage-to-laserscan package ([see also]())
-```
-aa
-```
-
 - Install rosbook_kobuki repository ([see also]())
 ```
-aa
+cw
+git clone https://github.com/oroca/rosbook_kobuki.git
+cm
 ```
+
+- Modify kobuki_slam.launch ([see also]())
 
 ## Launch
 
-## Todo
+## Todo list
 
+## Reference
 
