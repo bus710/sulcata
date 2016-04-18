@@ -96,9 +96,9 @@ cm
 - Modify kobuki_slam.launch ([see also](http://cafe.naver.com/openrt/11728))  
 ```
 <launch>
-<node pkg="urg_node" type="urg_node" name="kobuki_urg_node" output="screen">
-	<param name="frame_id" value="base_scan" />
-</node>
+#<node pkg="urg_node" type="urg_node" name="kobuki_urg_node" output="screen">
+	#<param name="frame_id" value="base_scan" />
+#</node>
 <node pkg="kobuki_tf" type="kobuki_tf" name="kobuki_tf" output="screen">
 </node>
 ``` 
