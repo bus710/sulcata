@@ -58,6 +58,7 @@ sudo apt-get install python-rosinstall
 ```
 
 - Set up ROS environment.
+Once you finish ROS installation, catkin work space should be set. Also some bashrc settings can be added for convenience.
 ```
 cd ~
 mkdir catkin_ws
@@ -72,21 +73,25 @@ source ~/.bashrc
 ```
 
 - Install Kobuki packages ([see also](http://wiki.ros.org/turtlebot))
+These packackges provides several features for both running and sumulating Kobuki. 
 ```
 sudo apt-get install ros-indigo-kobuki* 
 ```
 
 - Install urg_node package ([see also](http://wiki.ros.org/urg_node))
+Although this package is designed for 2D LRF sensor, you can leverage for your Konect2
 ```
 sudo apt-get install ros-indigo-urg-node 
 ```
 
 - Install depthimage-to-laserscan package ([see also](http://wiki.ros.org/depthimage_to_laserscan))
+This package is the key to convert Kinect's 3D data to 2D data to make map around your robot.
 ```
 sudo apt-get install ros-indigo-depthimage-to-laserscan
 ```
 
 - Install rosbook_kobuki repository ([see also](https://github.com/oroca/rosbook_kobuki.git))
+This package, which is developed by Dr.Pyo, is the core of various Kobuki based SLAM and navigation projects. 
 ```
 cs
 git clone https://github.com/oroca/rosbook_kobuki.git
@@ -94,7 +99,7 @@ cm
 ```
 
 - Modify kobuki_slam.launch ([see also](http://cafe.naver.com/openrt/11728))  
-The lines, which is related to "urg_node", should be commentted.
+Since 'kobuki_slam' was originally designed for 2D LRF data, you should modify a launch file, whici is 'kobuki_slam.launch' in the repository. The lines, which is related to "urg_node", should be commentted.
 ```
 <launch>
 #<node pkg="urg_node" type="urg_node" name="kobuki_urg_node" output="screen">
@@ -105,6 +110,7 @@ The lines, which is related to "urg_node", should be commentted.
 ``` 
 
 - Install libfreenect2 package ([see also](https://github.com/OpenKinect/libfreenect2))
+This package provides a driver and a test application for Kinect v2. In order to take advantage of GPGPU, this package's installation steps explain for several GPUs from different vendors such as Nvidia-GTX/Tegra, AMD-Radeon, Intel-HD, ARM-Mali. However, below lines only show for Intel-HD GPUs. 
 ```
 # download & install
 cd
@@ -126,12 +132,13 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2
 make
 make install
 
-# test
+# test (unplug Kinect v2 USB code and plug it again.) 
 sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
 ./bin/Protonect
 ```
 
 - Install iai_kinect2 package ([see also](https://github.com/code-iai/iai_kinect2))
+In order to connect freenect2 driver and ROS, you should install this package. 
 ```
 cd ~/catkin_ws/src/
 git clone https://github.com/code-iai/iai_kinect2.git
@@ -142,6 +149,7 @@ catkin_make -DCMAKE_BUILD_TYPE="Release"
 ```
 
 ## Launch
+Now, the stack is ready to run 'kobuki_slam'. If the hardware and software are well installed, you can see the image attahced below. Each command should be run in new terminals (or tmux). If you use a better GPU than mine (HD5200 or later), you can change 'sd' to 'hd' or 'qhd' from the line for 'depthimage_to_laserscan'.
 ```
 # launch apps in target system 
 roscore
@@ -156,6 +164,7 @@ roslaunch kobuki_keyop keyop.launch
 ```
 
 ## Launch (alternative)
+Since the launch commands are pretty complex, this repository provides simple scripts in the scripts directory.
 ```
 # install this repository in target system
 cd ~/Download
@@ -177,6 +186,7 @@ roscore
 ![images/run_1.png](images/run_1.png)
 
 ## Todo list
+Now you have the working sample for your project. What will you try after this? I might try these goals in the future. If you are interested or want to suggest something, please do PR or leave issues.  
 - Actual SLAM and navigation usage will be written.
 - Modify for Ubuntu 16.04.
 - Trouble shooting for issues.  
