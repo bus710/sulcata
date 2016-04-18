@@ -87,13 +87,13 @@ sudo apt-get install ros-indigo-depthimage-to-laserscan
 
 - Install rosbook_kobuki repository ([see also](https://github.com/oroca/rosbook_kobuki.git))
 ```
-cw
+cs
 git clone https://github.com/oroca/rosbook_kobuki.git
 cm
 ```
 
-- Modify kobuki_slam.launch ([see also](http://cafe.naver.com/openrt/11728))
-From 
+- Modify kobuki_slam.launch ([see also](http://cafe.naver.com/openrt/11728))  
+Before 
 ```
 <launch>
 
@@ -103,9 +103,8 @@ From
 
 <node pkg="kobuki_tf" type="kobuki_tf" name="kobuki_tf" output="screen">
 </node>
-
-```
-To 
+```  
+After
 ```
 <launch>
 
