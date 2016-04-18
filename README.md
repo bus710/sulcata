@@ -54,38 +54,43 @@ echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 sudo apt-get install python-rosinstall
 ```
+
 - Set up ROS environment.
 ```
 cd ~
 mkdir catkin_ws
 cd catkin_ws
-
+catkin_make
+echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 ```
+
 - Install libfreenect2 package ([see also]())
 ```
 aa
 ```
+
 - Install iai_kinect2 package ([see also]())
 ```
 aa
 ```
+
 - Install Kobuki packages ([see also]())
 ```
 aa
 ```
+
 - Install urg_node package ([see also]())
 ```
 aa
 ```
+
 - Install depthimage-to-laserscan package ([see also]())
 ```
 aa
 ```
+
 - Install rosbook_kobuki repository ([see also]())
-```
-aa
-```
-([see also]())
 ```
 aa
 ```
