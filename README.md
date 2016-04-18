@@ -17,7 +17,7 @@ This can be useful for developers who have Kinect v2 instead of Kinect v1 or Xti
 ## Table of contents
 - [Description](#description)
 - [Hardware setting](#hardware setting)
-- [Software](#software)
+- [Software setting](#software setting)
 - [Launch](#launch)
 - [Todo](#todo)
 
@@ -36,7 +36,7 @@ Altough you need a slodering and drilling process to build this, I would like to
 
 The PC in the pictures has Intel's x86-64 CPU, HD4000 GPU, and 8GB RAM. It is common spec for nowadays buying options (Actually, it is slightly outdated spec). Just make sure it is Ubuntu 14.04 compatible system.   
 
-## Software
+## Software setting
 The software stack you will use rely on Ubuntu 14.04. Thus I assume that you already installed Ubuntu 14.04 on your PC/Laptop.  
 
 After that you should follow below installation steps.  
