@@ -72,7 +72,7 @@ source ~/.bashrc
 
 - Install Kobuki packages ([see also]())
 ```
-sudo apt-get install ros-indigo-kobuki\*  
+sudo apt-get install ros-indigo-kobuki * 
 ```
 
 - Install urg_node package ([see also]())
@@ -85,16 +85,32 @@ sudo apt-get install ros-indigo-urg-node
 sudo apt-get install ros-indigo-depthimage-to-laserscan
 ```
 
-- Install rosbook_kobuki repository ([see also]())
+- Install rosbook_kobuki repository ([see also](https://github.com/oroca/rosbook_kobuki.git))
 ```
 cw
 git clone https://github.com/oroca/rosbook_kobuki.git
 cm
 ```
 
-- Modify kobuki_slam.launch ([see also]())
+- Modify kobuki_slam.launch ([see also](http://cafe.naver.com/openrt/11728))
+From 
 ```
-aaa
+<launch>
+
+<node pkg="urg_node" type="urg_node" name="kobuki_urg_node" output="screen">
+<param name="frame_id" value="base_scan" />
+</node>
+
+<node pkg="kobuki_tf" type="kobuki_tf" name="kobuki_tf" output="screen">
+</node>
+
+```
+To 
+```
+<launch>
+
+<node pkg="kobuki_tf" type="kobuki_tf" name="kobuki_tf" output="screen">
+</node>
 ```
 
 - Install libfreenect2 package ([see also]())
