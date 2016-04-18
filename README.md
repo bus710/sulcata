@@ -103,12 +103,12 @@ cm
 </node>
 ``` 
 
-- Install libfreenect2 package ([see also]())
+- Install libfreenect2 package ([see also](https://github.com/OpenKinect/libfreenect2))
 ```
 
 ```
 
-- Install iai_kinect2 package ([see also]())
+- Install iai_kinect2 package ([see also](https://github.com/code-iai/iai_kinect2))
 ```
 aa
 ```
