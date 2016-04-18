@@ -22,6 +22,8 @@ This can be useful for developers who have Kinect v2 instead of Kinect v1 or Xti
 - [Todo](#todo)
 
 ## Hardware
+As the description mentioned, a x86 PC, a Kobuki, and a Kinect v2 are main material. However, to connect the devices, there are few errand.
+
 
 ## Software
 
