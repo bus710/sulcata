@@ -1,13 +1,12 @@
 # sulcata
 
 ## Description
-A robot integration project by using Ubuntu 14.04, ROS Indigo, Kobuki (Turtle Bot), and Kinect v2. ([for Korean](README_kr.md))
 본 프로젝트는 우분투14.04, ROS 인디고, 거북이 로봇, 키넥트 v2를 활용하는 한 예를 제시하고자 작성 되었습니다. ([for International](README.md))
 
-Users can:
-- see the easiest way to build a ROS based robot.
-- know the essential hardware/software for SLAM and navigation project.
-- have scripts to launch the required ROS apps.
+사용자들은 다음을 목표로 본 프로젝트를 활용할 수 있습니다.
+- ROS 기반 로봇 제작에 있어서 최대한 간단하고 빠른 방법을 제시합니다.  
+- SLAM과 네비게이션 프로젝트를 위한 최소한의 구성이 어떤지 확인 할 수 있습니다. 
+- ROS 어플들을 실행하기 위한 간단한 명령어들을 제시 합니다. 
 
 This project can be useful for developers who have Kinect v2 instead of Kinect v1 or Xtion. 
 
