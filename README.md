@@ -143,7 +143,7 @@ catkin_make -DCMAKE_BUILD_TYPE="Release"
 
 ## Launch
 ```
-# from target system 
+# launch apps in target system 
 roscore
 roslaunch kobuki_node minimal.launch --screen
 roslaunch kinect2_bridge kinect2_bridge.launch publish_tf:=true
@@ -151,9 +151,29 @@ roslaunch kobuki_slam kobuki_slam.launch
 rosrun depthimage_to_laserscan depthimage_to_laserscan image:=/kinect2/sd/image_depth_rect _output_frame_id:=/base_scan
 rosrun rviz rviz -d `rospack find kobuki_slam`/rviz/kobuki_slam.rviz 
 
-# from remote system
+# launch apps in remote system
 roslaunch kobuki_keyop keyop.launch
 ```
+
+## Launch (alternative)
+```
+# install this repository in target system
+cd ~/Download
+git clone https://github.com/bus710/sulcata
+cd scripts
+
+# launch apps in target system
+roscore
+./01_kobuki
+./02_kinect_bridge
+./03_depth_laserscan
+./04_kobuki_slam
+./05_rviz
+
+# launch apps in remote system
+./09_keyop
+```
+
 ![images/run_1.png](images/run_1.png)
 
 ## Todo list
@@ -165,4 +185,5 @@ roslaunch kobuki_keyop keyop.launch
 [1] ''
 [2] ''
 [3] ''
+
 
