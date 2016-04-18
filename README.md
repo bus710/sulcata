@@ -21,7 +21,7 @@ This can be useful for developers who have Kinect v2 instead of Kinect v1 or Xti
 - [Launch](#launch)
 - [Todo](#todo)
 
-## Hardware
+## Hardware setting
 Altough you need a slodering and drilling process to build this, I would like to say this is relatively easy. :)  
 
 ![images/1.jpg](images/1.jpg)
