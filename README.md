@@ -103,7 +103,7 @@ Before
 
 <node pkg="kobuki_tf" type="kobuki_tf" name="kobuki_tf" output="screen">
 </node>
-```  
+``` 
 After
 ```
 <launch>
