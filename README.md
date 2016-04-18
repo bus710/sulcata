@@ -41,7 +41,7 @@ The PC in the pictures has Intel's x86-64 CPU, HD4000 GPU, and 8GB RAM. It is co
 The software stack you will use rely on Ubuntu 14.04. Thus I assume that you already installed Ubuntu 14.04 on your PC/Laptop.  
 
 After that you should follow below installation steps.  
-- Install ROS Indigo desktop full version. ([see also]())
+- Install ROS Indigo desktop full version. ([see also](http://wiki.ros.org/indigo/Installation/Ubuntu))
 ```
 aa
 ```
@@ -73,13 +73,6 @@ aa
 ```
 aa
 ```
-
-
-
-
-
-
-
 
 ## Launch
 
