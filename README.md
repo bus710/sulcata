@@ -192,8 +192,10 @@ Now you have the working sample for your project. What will you try after this? 
 - Trouble shooting for issues.  
 
 ## Reference
-[1] ''  
-[2] ''  
-[3] ''  
+[1] http://wiki.ros.org/Books/ROS_Robot_Programing 
+[2] https://github.com/oroca/rosbook_kobuki
+[3] https://github.com/OpenKinect/libfreenect2
+[4] https://github.com/code-iai/iai_kinect2
+[5] http://wiki.ros.org/turtlebot
 
 
