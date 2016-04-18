@@ -85,6 +85,18 @@ sudo apt-get install ros-indigo-urg-node
 sudo apt-get install ros-indigo-depthimage-to-laserscan
 ```
 
+- Install rosbook_kobuki repository ([see also]())
+```
+cw
+git clone https://github.com/oroca/rosbook_kobuki.git
+cm
+```
+
+- Modify kobuki_slam.launch ([see also]())
+```
+aaa
+```
+
 - Install libfreenect2 package ([see also]())
 ```
 
@@ -95,14 +107,6 @@ sudo apt-get install ros-indigo-depthimage-to-laserscan
 aa
 ```
 
-- Install rosbook_kobuki repository ([see also]())
-```
-cw
-git clone https://github.com/oroca/rosbook_kobuki.git
-cm
-```
-
-- Modify kobuki_slam.launch ([see also]())
 
 ## Launch
 
