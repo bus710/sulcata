@@ -144,10 +144,16 @@ catkin_make -DCMAKE_BUILD_TYPE="Release"
 ## Launch
 ```
 roscore
-
+roslaunch kobuki_node minimal.launch --screen
+roslaunch kinect2_bridge kinect2_bridge.launch publish_tf:=true
+roslaunch kobuki_slam kobuki_slam.launch
+rosrun depthimage_to_laserscan depthimage_to_laserscan image:=/kinect2/sd/image_depth_rect _output_frame_id:=/base_scan
+rosrun rviz rviz -d `rospack find kobuki_slam`/rviz/kobuki_slam.rviz 
 ```
 
 ## Todo list
 
 ## Reference
 
+
+roslaunch kobuki_keyop keyop.launch
