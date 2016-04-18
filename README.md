@@ -16,7 +16,7 @@ This can be useful for developers who have Kinect v2 instead of Kinect v1 or Xti
 
 ## Table of contents
 - [Description](#description)
-- [Hardware](#hardware)
+- [Hardware setting](#hardware setting)
 - [Software](#software)
 - [Launch](#launch)
 - [Todo](#todo)
