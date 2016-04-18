@@ -71,17 +71,17 @@ echo "alias cm='cw && catkin_make'"
 source ~/.bashrc
 ```
 
-- Install Kobuki packages ([see also]())
+- Install Kobuki packages ([see also](http://wiki.ros.org/turtlebot))
 ```
 sudo apt-get install ros-indigo-kobuki * 
 ```
 
-- Install urg_node package ([see also]())
+- Install urg_node package ([see also](http://wiki.ros.org/urg_node))
 ```
 sudo apt-get install ros-indigo-urg-node 
 ```
 
-- Install depthimage-to-laserscan package ([see also]())
+- Install depthimage-to-laserscan package ([see also](http://wiki.ros.org/depthimage_to_laserscan))
 ```
 sudo apt-get install ros-indigo-depthimage-to-laserscan
 ```
