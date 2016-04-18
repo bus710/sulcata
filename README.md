@@ -73,7 +73,7 @@ source ~/.bashrc
 
 - Install Kobuki packages ([see also](http://wiki.ros.org/turtlebot))
 ```
-sudo apt-get install ros-indigo-kobuki * 
+sudo apt-get install ros-indigo-kobuki* 
 ```
 
 - Install urg_node package ([see also](http://wiki.ros.org/urg_node))
@@ -150,8 +150,12 @@ roslaunch kobuki_slam kobuki_slam.launch
 rosrun depthimage_to_laserscan depthimage_to_laserscan image:=/kinect2/sd/image_depth_rect _output_frame_id:=/base_scan
 rosrun rviz rviz -d `rospack find kobuki_slam`/rviz/kobuki_slam.rviz 
 ```
+![images/run_1.png](images/run_1.png)
 
 ## Todo list
+- Actual SLAM and navigation usage will be written.
+- Modify for Ubuntu 16.04.
+- Trouble shooting for issues.
 
 ## Reference
 
