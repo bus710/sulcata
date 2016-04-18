@@ -8,6 +8,9 @@ Users can:
 - know the essential hardware/software for SLAM and navigation project.
 - have scripts to launch the required ROS apps.
 
+This can be useful for developers who have Kinect v2 instead of Kinect v1 or Xtion.
+Sulcata is a species of tortoise, and... ([see also](https://en.wikipedia.org/wiki/African_spurred_tortoise))
+
 ## Maintainer
 - [SJ Kim](http://bus710.net)<<bus710@gmail.com>>
 
@@ -16,6 +19,14 @@ Users can:
 - [Hardware](#hardware)
 - [Software](#software)
 - [Launch](#launch)
+- [Todo](#todo)
 
+## Hardware
+
+## Software
+
+## Launch
+
+## Todo
 
 
