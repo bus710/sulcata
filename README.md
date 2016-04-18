@@ -20,8 +20,9 @@ This project can be useful for developers who have Kinect v2 instead of Kinect v
 - [Hardware setting](#hardware-setting)
 - [Software setting](#software-setting)
 - [Launch](#launch)
+- [Launch (alternative)] (#launch-alternative)
 - [Todo list](#todo-list)
-- [Reference](#todo)
+- [Reference](#reference)
 
 ## Hardware setting
 Altough you need a slodering and drilling process to build this, I would like to say this is relatively easy. :)  
