@@ -34,6 +34,8 @@ This can be useful for developers who have Kinect v2 instead of Kinect v1 or Xti
 
 Altough you need a slodering and drilling process to build this, I would like to say this is relatively easy. :)
 
+The PC in the pictures has Intel's x86-64 CPU, HD4000 GPU, and 8GB RAM. It is common spec for nowadays buying option. Just make sure it is Ubuntu 14.04 compatible system.   
+
 ## Software
 
 ## Launch
