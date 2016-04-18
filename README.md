@@ -72,7 +72,7 @@ source ~/.bashrc
 
 - Install Kobuki packages ([see also]())
 ```
-sudo apt-get install ros-indigo-kobuki*
+sudo apt-get install ros-indigo-kobuki\*  
 ```
 
 - Install urg_node package ([see also]())
