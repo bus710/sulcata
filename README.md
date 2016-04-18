@@ -94,6 +94,7 @@ cm
 ```
 
 - Modify kobuki_slam.launch ([see also](http://cafe.naver.com/openrt/11728))  
+The lines, which is related to "urg_node", should be commentted.
 ```
 <launch>
 #<node pkg="urg_node" type="urg_node" name="kobuki_urg_node" output="screen">
@@ -105,7 +106,30 @@ cm
 
 - Install libfreenect2 package ([see also](https://github.com/OpenKinect/libfreenect2))
 ```
+# download & install
+cd
+git clone https://github.com/OpenKinect/libfreenect2.git
+cd libfreenect2
+cd depends; ./download_debs_trusty.sh
+sudo apt-get install build-essential cmake pkg-config
+sudo dpkg -i debs/libusb*deb
+sudo dpkg -i debs/libusb*deb
+sudo apt-get install libturbojpeg libjpeg-turbo8-dev
+sudo dpkg -i debs/libglfw3*deb; sudo apt-get install -f; sudo apt-get install libgl1-mesa-dri-lts-vivid
+sudo apt-add-repository ppa:floe/beignet; sudo apt-get update; sudo apt-get install beignet-dev; sudo dpkg -i debs/ocl-icd*deb
+sudo dpkg -i debs/{libva,i965}*deb; sudo apt-get install -f
+sudo apt-get install libopenni2-dev
 
+# build
+cd ..
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2
+make
+make install
+
+# test
+sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
+./bin/Protonect
 ```
 
 - Install iai_kinect2 package ([see also](https://github.com/code-iai/iai_kinect2))
