@@ -23,6 +23,9 @@ This can be useful for developers who have Kinect v2 instead of Kinect v1 or Xti
 
 ## Hardware
 ![images/1.jpg](images/1.jpg)
+![images/2.jpg](images/2.jpg)
+![images/3.jpg](images/3.jpg)
+![images/4.jpg](images/4.jpg)
 
 
 
