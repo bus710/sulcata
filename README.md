@@ -113,7 +113,6 @@ cd libfreenect2
 cd depends; ./download_debs_trusty.sh
 sudo apt-get install build-essential cmake pkg-config
 sudo dpkg -i debs/libusb*deb
-sudo dpkg -i debs/libusb*deb
 sudo apt-get install libturbojpeg libjpeg-turbo8-dev
 sudo dpkg -i debs/libglfw3*deb; sudo apt-get install -f; sudo apt-get install libgl1-mesa-dri-lts-vivid
 sudo apt-add-repository ppa:floe/beignet; sudo apt-get update; sudo apt-get install beignet-dev; sudo dpkg -i debs/ocl-icd*deb
@@ -134,11 +133,17 @@ sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
 
 - Install iai_kinect2 package ([see also](https://github.com/code-iai/iai_kinect2))
 ```
-aa
+cd ~/catkin_ws/src/
+git clone https://github.com/code-iai/iai_kinect2.git
+cd iai_kinect2
+rosdep install -r --from-paths .
+cd ~/catkin_ws
+catkin_make -DCMAKE_BUILD_TYPE="Release"
 ```
 
-
 ## Launch
+```
+```
 
 ## Todo list
 
