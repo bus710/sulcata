@@ -22,7 +22,7 @@ This can be useful for developers who have Kinect v2 instead of Kinect v1 or Xti
 - [Todo](#todo)
 
 ## Hardware
-
+![images/1.jpg](images/1.jpg)
 
 
 
