@@ -1,14 +1,15 @@
 # sulcata
 
 ## Description
-A robot integration project by using ROS, Kobuki (Turtle Bot), and Kinect v2. ([for Korean](README_kr.md))
+A robot integration project by using Ubuntu 14.04, ROS Indigo, Kobuki (Turtle Bot), and Kinect v2. ([for Korean](README_kr.md))
 
 Users can:
 - see the easiest way to build a ROS based robot.
 - know the essential hardware/software for SLAM and navigation project.
 - have scripts to launch the required ROS apps.
 
-This can be useful for developers who have Kinect v2 instead of Kinect v1 or Xtion.  
+This project can be useful for developers who have Kinect v2 instead of Kinect v1 or Xtion. 
+
 (Sulcata is a species of tortoise. Since this project is a variation of Turtle Bot, I named it as Sulcata project. (<a href="https://en.wikipedia.org/wiki/African_spurred_tortoise" target="_blank">see also</a>))
 
 ## Maintainer
@@ -44,8 +45,39 @@ After that you should follow below installation steps.
 ```
 aa
 ```
-- Install libfreenect2. ([see also]())
-- ([see also]())
+- Install libfreenect2 package ([see also]())
+```
+aa
+```
+- Install iai_kinect2 package ([see also]())
+```
+aa
+```
+- Install Kobuki packages ([see also]())
+```
+aa
+```
+- Install urg_node package ([see also]())
+```
+aa
+```
+- Install depthimage-to-laserscan package ([see also]())
+```
+aa
+```
+- Install rosbook_kobuki repository ([see also]())
+```
+aa
+```
+([see also]())
+```
+aa
+```
+
+
+
+
+
 
 
 
