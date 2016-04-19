@@ -59,7 +59,7 @@ source ~/.bashrc
 sudo apt-get install python-rosinstall
 ```
 
-- Set up ROS environment 
+- Set up ROS environment   
 ROS의 설치를 마치면, ROS 앱을 다운 받고 컴파일하는 장소를 마련해야 합니다. 또한 단축키를 추가하는 방법도 적어 두었습니다.
 ```
 cd ~
