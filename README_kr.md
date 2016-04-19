@@ -17,6 +17,7 @@
 
 ## Table of contents
 - [Description](#description)
+- [Requirement](#requirement)
 - [Hardware setting](#hardware-setting)
 - [Software setting](#software-setting)
 - [Launch](#launch)
@@ -24,8 +25,18 @@
 - [Todo list](#todo-list)
 - [Reference](#reference)
 
-## Hardware setting
-인두기와 납땜하는 과정을 최소한으로 줄이도록 노력 했습니다. 공구와 간단한 관련 지식이 있다면 30분 안에 모든 과정을 마칠 수 있습니다.
+## Requirement
+본 프로젝트에서는 아래와 같은 특정 하드웨어와 공구를 필요로 합니다.
+- 컴퓨터: 인텔 호환 CPU, HD4000 또는 그 이후의 GPU, 4GB 이상의 RAM, 32GB 이상의 하드디스크
+- 키넥트 v2
+- 거북이
+- 거북이 지지대 세트
+- 카메라 고정용 볼트
+- 납땜 공구
+- 드릴 공구
+
+## Hardware setting  
+드릴과 납땜하는 과정을 최소한으로 줄이도록 노력 했습니다. 공구와 간단한 관련 지식이 있다면 30분 안에 모든 과정을 마칠 수 있습니다.
 
 ![images/1.jpg](images/1.jpg)
 ![images/2.jpg](images/2.jpg)

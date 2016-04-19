@@ -1,7 +1,7 @@
 # sulcata
 
 ## Description
-A robot integration project by using Ubuntu 14.04, ROS Indigo, Kobuki (Turtle Bot), and Kinect v2. ([for Korean](README_kr.md))
+A robot integration project by using Ubuntu 14.04, ROS Indigo, Kobuki (Turtle Bot), and Kinect v2 ([for Korean](README_kr.md))
 
 Users can:
 - see the easiest way to build a ROS based robot.
@@ -17,12 +17,23 @@ This project can be useful for developers who have Kinect v2 instead of Kinect v
 
 ## Table of contents
 - [Description](#description)
+- [Requirement](#requirement)
 - [Hardware setting](#hardware-setting)
 - [Software setting](#software-setting)
 - [Launch](#launch)
 - [Launch (alternative)] (#launch-alternative)
 - [Todo list](#todo-list)
 - [Reference](#reference)
+
+## Requirement
+This project requires the specific hardware as below:
+- PC: Intel x86-64, HD4000 or better GPU, 4~8GB RAM, 32GB HDD/SDD
+- Kinect v2
+- Kobuki (Turtle Bot2)
+- Kobuki supportor option
+- Camera Mounting Screw (1/4")
+- Soldering tools
+- Drilling tools
 
 ## Hardware setting
 Altough you need a slodering and drilling process to build this, I would like to say this is relatively easy. :)  
