@@ -32,10 +32,8 @@
 ![images/3.jpg](images/3.jpg)
 ![images/4.jpg](images/4.jpg)    
 
-- The image 1 shows the entire setting for this project. Kobuki has its own buying option, which is wooden panel and aluminum poles so that we can utilize the materials to support Kinect and PC.  
 - 첫번째 이미지는 완성 되었을 때의 모습 입니다. 거북이를 구입할 때 옵션으로써 나무 패널과 알루미늄 지지대를 함께 구입할 수 있습니다. 
 - 두번째 이미지는 키넥트와 거북이, 컴퓨터 간의 결선을 보여줍니다. 키넥트v1에 비해 v2는 더 많은 전력을 요구하는 것으로 알려져 있기에 여기서는 거북이의 12V/5A 출력을 키넥트의 전원으로 사용하기로 했습니다. v2의 전원선을 잘라보면 예상과는 다르게, 둘로 나뉘어진 그물 케이블만으로 구성 된 것을 확인할 수 있습니다. 그것이 각각 + 전압과 GND 선인 것을 테스터기로 확인할 수 있습니다. 따라서 그 부분을 납땜을 통해 준비된 커넥터 (Molex PN : 5566-02B2)에 연결함으로써 쉽게 거북이에 연결할 수 있습니다. 납땜은 이것으로 끝!  
-- The image 3 shows the USB connection between PC, Kobuki, and Kinect. Especially Kinect v2 requires USB 3.0 so that the PC should have a decent port.   
 - 세번째 이미지는 컴퓨터와 거북이, 키넥트가 각각 USB 케이블로 연결 된 것을 보여 줍니다. 주의할 점은, 키넥트v2의 특성 상, USB 3.0 단자를 사용해 주어야 한다는 점 입니다.
 - 네번째 이미지는 키넥트를 패널에 고정하는 방법을 보여 줍니다 ([구입처](http://www.amazon.com/Smallrig%C2%AE-Screw-Adapter-Quick-Release/dp/B006GB5MDW)). 키넥트v2는 하단에 너트 소켓이 있는데, 일반적인 카메라 삼각대와 호환되는 사이즈 입니다. 따라서, 패널에 적절한 직경(10 mm)의 구멍을 내주고, 카메라 마운트용 볼트로 쉽게 고정해 줄 수 있습니다.
 
@@ -97,7 +95,6 @@ sudo apt-get install ros-indigo-depthimage-to-laserscan
 - Install rosbook_kobuki repository ([see also](https://github.com/oroca/rosbook_kobuki.git))
 This package, which is developed by Dr.Pyo, is the core of various Kobuki based SLAM and navigation projects. 
 ```
-cs
 git clone https://github.com/oroca/rosbook_kobuki.git
 cm
 ```
