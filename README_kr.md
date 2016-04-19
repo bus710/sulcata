@@ -170,7 +170,7 @@ roslaunch kobuki_keyop keyop.launch
 # install this repository in target system
 cd ~/Download
 git clone https://github.com/bus710/sulcata
-cd scripts
+cd sulcata/scripts
 
 # launch apps in target system
 roscore
