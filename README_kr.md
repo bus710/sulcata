@@ -100,7 +100,7 @@ cm
 ```
 
 - Modify kobuki_slam.launch ([see also](http://cafe.naver.com/openrt/11728))   
-위에 언급한 Kobuki_slam 패키지는 본래 2D LRF를 이용하기 때문에 키넥트를 이용하는 본 프로젝트의 경우에 약간의 파일 수정이 필요 합니다. Kobuki_slma.launch 파일에서 urg_node와 관련된 3줄의 소스코드를 삭제 또는 주석처리 합니다. 
+위에 언급한 Kobuki_slam 패키지는 본래 2D LRF를 이용하기 때문에 키넥트를 이용하는 본 프로젝트의 경우에 약간의 파일 수정이 필요 합니다. Kobuki_slam.launch 파일에서 urg_node와 관련된 3줄의 소스코드를 삭제 또는 주석처리 합니다. 
 ```
 <launch>
 #<node pkg="urg_node" type="urg_node" name="kobuki_urg_node" output="screen">
@@ -187,7 +187,7 @@ roscore
 ![images/run_1.png](images/run_1.png)
 
 ## Todo list
-여기까지 잘 되었다면, SLAM과 네비게이션을 실행하기 위한 준비는 끝났습니다. 이제는 본격적으로 자신이 필요한 상위 패키지 또는 자신의 코드를 이용한 ROS 앱을 개발할 차례 입니다. 
+여기까지 잘 되었다면, SLAM과 네비게이션을 실행하기 위한 준비는 끝났습니다. 이제는 본격적으로 자신이 필요한 상위 패키지 또는 자신의 코드를 이용한 ROS 앱을 개발할 차례 입니다.   
 본 저장소의 이후 목표는:
 - 향후 실제 SLAM과 네비게이션과 관련된 내용의 추가
 - 우분투 16.04, ROS Kinetic 등과 호환 되는 버전으로 업그레이드
