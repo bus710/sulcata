@@ -203,6 +203,9 @@ Now you have the working sample for your project. What will you try after this? 
 - Modify for Ubuntu 16.04.
 - Trouble shooting for issues.  
 
+## Etc
+Once you reboot your PC, you should unplug and plug your Kinect's USB code from PC. 
+
 ## Reference
 [1] http://wiki.ros.org/Books/ROS_Robot_Programing   
 [2] https://github.com/oroca/rosbook_kobuki  
