@@ -44,7 +44,7 @@
 
 아래에서는 주요 소프트웨어를 설치하는 방법을 최대한 간단히 안내 합니다만, 가급적이면 한번쯤은 관련 웹페이지를 확인하시길 추천 드립니다.
 
-- Install ROS Indigo desktop full version. ([see also](http://wiki.ros.org/indigo/Installation/Ubuntu))  
+- Install ROS Indigo desktop full version ([see also](http://wiki.ros.org/indigo/Installation/Ubuntu))  
 일단 ROS를 설치하는 방법 입니다. 설치에 큰 어려움은 없겠지만, 저장소의 키 값이 종종 바뀌거나 모종의 이유로 다운로드가 불가능할 경우가 있습니다. 그럴 때는 원래의 가이드에서 키값을 다시 확인하거나, 나중에 설치함으로써 해결할 수 있습니다.
 ```
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -59,7 +59,7 @@ source ~/.bashrc
 sudo apt-get install python-rosinstall
 ```
 
-- Set up ROS environment.  
+- Set up ROS environment 
 ROS의 설치를 마치면, ROS 앱을 다운 받고 컴파일하는 장소를 마련해야 합니다. 또한 단축키를 추가하는 방법도 적어 두었습니다.
 ```
 cd ~
@@ -133,7 +133,7 @@ cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/freenect2
 make
 make install
 
-# test (USB 드라이버의 문제로 부팅 시 마다 키넥트 코드를 PC에서 뺏다 꽂아야 합니다.) 
+# test 
 sudo cp ../platform/linux/udev/90-kinect2.rules /etc/udev/rules.d/
 ./bin/Protonect
 ```
@@ -193,6 +193,9 @@ roscore
 - 우분투 16.04, ROS Kinetic 등과 호환 되는 버전으로 업그레이드
 - 기타 트러블 슈팅
 등이 진행될 예정 입니다. 
+
+## Etc
+freenect2와 USB 초기 설정의 문제로 부팅 후에는 항상 키넥트의 USB 플러그를 뺐다 꽂아야 하는 번거로움이 있습니다.
 
 ## Reference
 [1] http://wiki.ros.org/Books/ROS_Robot_Programing   
