@@ -13,7 +13,7 @@
 (설카타는 육지 거북의 한 종류 입니다. 이 프로젝트가 다양한 거북이 로봇의 한 구현 예인 것에 착안하여 채택하였습니다. (<a href="https://en.wikipedia.org/wiki/African_spurred_tortoise" target="_blank">see also</a>))
 
 ## Maintainer
-- [SJ Kim](http://bus710.net)<<bus710@gmail.com>>
+- [김성준](http://bus710.net)<<bus710@gmail.com>>
 
 ## Table of contents
 - [Description](#description)
@@ -25,7 +25,7 @@
 - [Reference](#reference)
 
 ## Hardware setting
-Altough you need a slodering and drilling process to build this, I would like to say this is relatively easy. :)  
+인두기와 납땜하는 과정을 최소한으로 줄이도록 노력 했습니다. 공구와 간단한 관련 지식이 있다면 30분 안에 모든 과정을 마칠 수 있습니다.
 
 ![images/1.jpg](images/1.jpg)
 ![images/2.jpg](images/2.jpg)
@@ -33,18 +33,21 @@ Altough you need a slodering and drilling process to build this, I would like to
 ![images/4.jpg](images/4.jpg)    
 
 - The image 1 shows the entire setting for this project. Kobuki has its own buying option, which is wooden panel and aluminum poles so that we can utilize the materials to support Kinect and PC.  
-- The image 2 shows the electrical connection between Kobuki Kinect, and PC. Since Kinect v2 requires more power input than v1, I intentionally connected Kinect v2 to 12V/5A output as power source. If you cut Kinect's power code, there are two braided cables between shields. The braided cables are the actual power path for Kinect v2. However, please check which is positive and negative by using DMM. Also in order to connect the cable to Konuki, you need a special plug, which is "Molex PN : 5566-02B2".   
+- 첫번째 이미지는 완성 되었을 때의 모습 입니다. 거북이를 구입할 때 옵션으로써 나무 패널과 알루미늄 지지대를 함께 구입할 수 있습니다. 
+- 두번째 이미지는 키넥트와 거북이, 컴퓨터 간의 결선을 보여줍니다. 키넥트v1에 비해 v2는 더 많은 전력을 요구하는 것으로 알려져 있기에 여기서는 거북이의 12V/5A 출력을 키넥트의 전원으로 사용하기로 했습니다. v2의 전원선을 잘라보면 예상과는 다르게, 둘로 나뉘어진 그물 케이블만으로 구성 된 것을 확인할 수 있습니다. 그것이 각각 + 전압과 GND 선인 것을 테스터기로 확인할 수 있습니다. 따라서 그 부분을 납땜을 통해 준비된 커넥터 (Molex PN : 5566-02B2)에 연결함으로써 쉽게 거북이에 연결할 수 있습니다. 납땜은 이것으로 끝!  
 - The image 3 shows the USB connection between PC, Kobuki, and Kinect. Especially Kinect v2 requires USB 3.0 so that the PC should have a decent port.   
-- The image 4 shows the way to attach Kinect v2 on the wooden panel. Since Kinect v2 has a famale socket, which is compatible to typical tripod, you can buy a 1/4 inch camera mounting screw for that ([see also: amazon](http://www.amazon.com/Smallrig%C2%AE-Screw-Adapter-Quick-Release/dp/B006GB5MDW)). You also need to make a hole on the panel because the diameter of camera mounting bolt is thicker than the holes on the wooden panel. (It is around 10 mm.)
+- 세번째 이미지는 컴퓨터와 거북이, 키넥트가 각각 USB 케이블로 연결 된 것을 보여 줍니다. 주의할 점은, 키넥트v2의 특성 상, USB 3.0 단자를 사용해 주어야 한다는 점 입니다.
+- 네번째 이미지는 키넥트를 패널에 고정하는 방법을 보여 줍니다 ([구입처](http://www.amazon.com/Smallrig%C2%AE-Screw-Adapter-Quick-Release/dp/B006GB5MDW)). 키넥트v2는 하단에 너트 소켓이 있는데, 일반적인 카메라 삼각대와 호환되는 사이즈 입니다. 따라서, 패널에 적절한 직경(10 mm)의 구멍을 내주고, 카메라 마운트용 볼트로 쉽게 고정해 줄 수 있습니다.
 
-The PC in the pictures has Intel's x86-64 CPU, HD4000 GPU, and 8GB RAM. It is common spec for nowadays buying options (Actually, it is slightly outdated spec). Just make sure it is Ubuntu 14.04 compatible system.   
+추가로, 본 예제에 사용된 컴퓨터는 인텔의 3세대 I5 모바일 CPU, 내장 그래픽 HD4000, 8GB의 램으로 구성 되었습니다. 요즘에 있어서는 크게 고사양은 아니지만, 어쨋거나 반드시 우분투 14.04와 호환이 잘 되는 시스템을 사용하시길 권장 합니다.  
 
 ## Software setting
-The software stack you will use rely on Ubuntu 14.04. Thus I assume that you already installed Ubuntu 14.04 on your PC/Laptop.  
+본 프로젝트는 우분투 14.04에 의존하고 있습니다. 따라서 독자들께서 이미 우분투 14.04를 설치/사용하고 있는 것을 가정하도록 하겠습니다. 
 
-Now you can follow below installation steps.  
+아래에서는 주요 소프트웨어를 설치하는 방법을 최대한 간단히 안내 합니다만, 가급적이면 한번쯤은 관련 웹페이지를 확인하시길 추천 드립니다.
 
 - Install ROS Indigo desktop full version. ([see also](http://wiki.ros.org/indigo/Installation/Ubuntu))
+일단 ROS를 설치하는 방법 입니다. 설치에 큰 어려움은 없겠지만, 저장소의 키 값이 종종 바뀌거나 모종의 이유로 다운로드가 불가능할 경우가 있습니다. 그럴 때는 원래의 가이드에서 키값을 다시 확인하거나, 나중에 설치함으로써 해결할 수 있습니다.
 ```
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 0xB01FA116
@@ -59,7 +62,7 @@ sudo apt-get install python-rosinstall
 ```
 
 - Set up ROS environment.
-Once you finish ROS installation, catkin work space should be set. Also some bashrc settings can be added for convenience.
+ROS의 설치를 마치면, ROS 앱을 다운 받고 컴파일하는 장소를 마련해야 합니다. 또한 단축키를 추가하는 방법도 적어 두었습니다.
 ```
 cd ~
 mkdir catkin_ws
@@ -74,7 +77,7 @@ source ~/.bashrc
 ```
 
 - Install Kobuki packages ([see also](http://wiki.ros.org/turtlebot))
-These packackges provides several features for both running and sumulating Kobuki. 
+거북이 패키지는 실제 제품 또는 시뮬레이터 상의 거북이를 제어하기 위한 드라이버와 어플리케이션을 포함하고 있습니다. 
 ```
 sudo apt-get install ros-indigo-kobuki* 
 ```
