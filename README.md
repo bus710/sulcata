@@ -13,7 +13,7 @@ This project can be useful for developers who have Kinect v2 instead of Kinect v
 (Sulcata is a species of tortoise. Since this project is a variation of Turtle Bot, I named it as Sulcata project. (<a href="https://en.wikipedia.org/wiki/African_spurred_tortoise" target="_blank">see also</a>))
 
 ## Maintainer
-- [SJ Kim](http://bus710.net)<<bus710@gmail.com>>
+- [SJ Kim](http://bus710.net) <<bus710@gmail.com>>
 
 ## Table of contents
 - [Description](#description)
@@ -32,6 +32,7 @@ This project requires the specific hardware as below:
 - Kobuki (Turtle Bot2)
 - Kobuki supportor option
 - Camera Mounting Screw (1/4")
+- Molex PN : 5566-02B2
 - Soldering tools
 - Drilling tools
 

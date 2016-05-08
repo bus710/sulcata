@@ -13,7 +13,7 @@
 (설카타는 육지 거북의 한 종류 입니다. 이 프로젝트가 다양한 거북이 로봇의 한 구현 예인 것에 착안하여 채택하였습니다. (<a href="https://en.wikipedia.org/wiki/African_spurred_tortoise" target="_blank">see also</a>))
 
 ## Maintainer
-- [김성준](http://bus710.net)<<bus710@gmail.com>>
+- [김성준](http://bus710.net) <<bus710@gmail.com>>
 
 ## Table of contents
 - [Description](#description)
@@ -32,6 +32,7 @@
 - 거북이
 - 거북이 지지대 세트
 - 카메라 고정용 볼트
+- Molex PN : 5566-02B2
 - 납땜 공구
 - 드릴 공구
 
