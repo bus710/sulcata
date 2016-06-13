@@ -107,6 +107,8 @@ sudo apt-get install ros-indigo-depthimage-to-laserscan
 - Install rosbook_kobuki repository ([see also](https://github.com/oroca/rosbook_kobuki.git))  
 이 저장소는 오로카의 표윤석 박사가 개발하였으며, 거북이를 이용한 SLAM또는 네비게이션을 위한 Kobuki_slam이 포함 되어 있습니다. 
 ```
+cs
+sudo apt-get install ros-indigo-amcl
 git clone https://github.com/oroca/rosbook_kobuki.git
 cm
 ```

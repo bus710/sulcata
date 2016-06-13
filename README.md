@@ -107,6 +107,7 @@ sudo apt-get install ros-indigo-depthimage-to-laserscan
 This package, which is developed by Dr.Pyo, is the core of various Kobuki based SLAM and navigation projects. 
 ```
 cs
+sudo apt-get install ros-indigo-amcl
 git clone https://github.com/oroca/rosbook_kobuki.git
 cm
 ```
