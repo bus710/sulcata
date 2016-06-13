@@ -89,7 +89,8 @@ source ~/.bashrc
 - Install Kobuki packages ([see also](http://wiki.ros.org/turtlebot))  
 거북이 패키지는 실제 거북이 로봇  또는 시뮬레이터 상의 거북이를 제어하기 위한 드라이버와 어플리케이션을 포함하고 있습니다. 
 ```
-sudo apt-get install ros-indigo-kobuki* 
+sudo apt-get install ros-indigo-kobuki
+rosrun kobuki_ftdi create_udev_rules
 ```
 
 - Install urg_node package ([see also](http://wiki.ros.org/urg_node))  
@@ -109,6 +110,9 @@ sudo apt-get install ros-indigo-depthimage-to-laserscan
 ```
 cs
 sudo apt-get install ros-indigo-amcl
+sudo apt-get install ros-indigo-gmapping
+sudo mknod /dev/ttyACM0 c 166 0
+sudo chmod a+rw /dev/ttyACM0
 git clone https://github.com/oroca/rosbook_kobuki.git
 cm
 ```

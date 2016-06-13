@@ -89,6 +89,7 @@ source ~/.bashrc
 These packackges provides several features for both running and sumulating Kobuki. 
 ```
 sudo apt-get install ros-indigo-kobuki* 
+rosrun kobuki_ftdi create_udev_rules
 ```
 
 - Install urg_node package ([see also](http://wiki.ros.org/urg_node))
@@ -108,6 +109,9 @@ This package, which is developed by Dr.Pyo, is the core of various Kobuki based 
 ```
 cs
 sudo apt-get install ros-indigo-amcl
+sudo apt-get install ros-indigo-gmapping
+sudo mknod /dev/ttyACM0 c 166 0
+sudo chmod a+rw /dev/ttyACM0
 git clone https://github.com/oroca/rosbook_kobuki.git
 cm
 ```
